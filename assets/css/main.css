@@ -32,7 +32,7 @@ header .links {
 }
 
 .link_item_active {
-    color: #34fefa !important;
+    color: #FFFFFF !important;
 }
 
 .link_item:hover {
@@ -63,7 +63,8 @@ header .links {
 
 .item1 {
     height: 700px;
-    background: url("http://ovn188pj2.bkt.gdipper.com/bg1.jpg") no-repeat;
+    /*background: url("http://ovn188pj2.bkt.gdipper.com/bg1.jpg") no-repeat;*/
+    background: url("../imgs/bg1@2x.png") no-repeat;
     background-size: cover;
 }
 
@@ -87,14 +88,14 @@ header .links {
 }
 
 .button_hover {
-    background: #2dd2cd;
+    background: #FCAB28;
     border: 1px rgba(0, 0, 0, 0) solid!important;
 }
 
 /* 第二块 */
 
 .item2 {
-    background: url("http://ovn188pj2.bkt.gdipper.com/bg2.jpg") no-repeat;
+    background: url("../imgs/bg2@2x.png") no-repeat;
     background-size: cover;
 }
 
@@ -108,7 +109,7 @@ header .links {
 
 .item2 .title {
     margin-top: 40px 0;
-    font-weight: 200;
+    font-weight: 100;
 }
 
 .item2 .dec {
@@ -120,7 +121,7 @@ header .links {
 
 .item2 .subtitle {
     font-size: 22px;
-    color: #2dd2d1;
+    color: #FCAB28;
 }
 
 .item2 .text {
@@ -144,7 +145,7 @@ header .links {
 }
 
 .item3 .title {
-    font-weight: 200;
+    font-weight: 100;
     font-size: 40px;
     margin-bottom: 65px;
 }
@@ -152,7 +153,7 @@ header .links {
 .item3 .subtitle {
     font-weight: 300;
     font-size: 30px;
-    color: #35ffff;
+    color: #FCAB28;
 }
 
 .item3 .text {
@@ -178,7 +179,7 @@ header .links {
 }
 
 .item4 .title {
-    font-weight: 200;
+    font-weight: 100;
     font-size: 40px;
     margin-bottom: 65px;
 }
@@ -270,7 +271,7 @@ header .links {
 }
 
 .item5 .title {
-    font-weight: 200;
+    font-weight: 100;
     font-size: 40px;
     margin-bottom: 65px;
 }
