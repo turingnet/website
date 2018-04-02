@@ -63,8 +63,8 @@ header .links {
 
 .item1 {
     height: 700px;
-    /*background: url("http://ovn188pj2.bkt.gdipper.com/bg1.jpg") no-repeat;*/
-    background: url("../imgs/bg1@2x.png") no-repeat;
+    background: url("http://ovn188pj2.bkt.gdipper.com/bg1_20180402.png") no-repeat;
+    /*background: url("../imgs/bg1_20180402.png") no-repeat;*/
     background-size: cover;
 }
 
@@ -95,7 +95,7 @@ header .links {
 /* 第二块 */
 
 .item2 {
-    background: url("../imgs/bg2@2x.png") no-repeat;
+    background: url("http://ovn188pj2.bkt.gdipper.com/bg2_20180402.png") no-repeat;
     background-size: cover;
 }
 
@@ -387,7 +387,7 @@ header .links {
     right: 15%;
     height: 640px;
     width: 960px;
-    background: url("../imgs/pic_map@2x.png") no-repeat;
+    background: url("http://ovn188pj2.bkt.gdipper.com/pic_map_20180402.png") no-repeat;
     background-size: cover;
 }
 
