@@ -3,9 +3,7 @@ $(function () {
     // 根据query参数跳至相应区块
     var blockName = getRequest().name || "";
 
-    if (!blockName) {
-        return
-    } else {
+    if (blockName) {
         $("html, body").animate({
             scrollTop: $("#" + blockName)
                 .offset()
