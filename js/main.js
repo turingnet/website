@@ -1,7 +1,37 @@
 $(function () {
 
+    // 根据query参数跳至相应区块
+    var blockName = getRequest().name || "";
+
+    if (!blockName) {
+        return
+    } else {
+        $("html, body").animate({
+            scrollTop: $("#" + blockName)
+                .offset()
+                .top + "px"
+        }, {
+            duration: 600,
+            easing: "swing"
+        })
+    }
+
+    // 获取query参数
+    function getRequest() {
+        var url = window.location.search; //获取url中"?"符后的字串
+        var theRequest = new Object();
+        if (url.indexOf("?") != -1) {
+            var str = url.substr(1);
+            strs = str.split("&");
+            for (var i = 0; i < strs.length; i++) {
+                theRequest[strs[i].split("=")[0]] = decodeURI(strs[i].split("=")[1]);
+            }
+        }
+        return theRequest;
+    }
+
     // 点击导航操作
-    $("a.link_item").click(function () {
+    $(".link_item").click(function () {
         $("html, body").animate({
             scrollTop: $($(this).attr("href"))
                 .offset()

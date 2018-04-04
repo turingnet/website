@@ -3,6 +3,7 @@ html,body{
     border: 0;
     padding: 0;
     font-family: "Helvetica Neue";
+    overflow-x: hidden;
 }
 a{
     text-decoration: none;
