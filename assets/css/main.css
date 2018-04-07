@@ -372,6 +372,10 @@ header .links {
     color: #FCAB28;
 }
 
+.item6 .subtitle a {
+    color: #FCAB28;
+}
+
 .item6 .icon{
     position: absolute;
     width: 42px;
