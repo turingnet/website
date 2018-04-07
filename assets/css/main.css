@@ -455,7 +455,7 @@ footer {
     margin: 20px 0;
     line-height: 25px; 
 }
-.content_text .content .mail{
+.content_text .content .mail a{
     color: #1868d4;
 }
 .content_text .position{
