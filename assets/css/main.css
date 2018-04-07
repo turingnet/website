@@ -31,6 +31,10 @@ header .links {
     font-size: 16px;
 }
 
+body {
+    background-color:black;
+}
+
 .link_item_active {
     color: #FFFFFF !important;
 }
