@@ -447,7 +447,7 @@ footer {
 }
 .content_text .content{
     width: calc(100% - 250px);
-    margin-left: 238px;
+    margin-left: 0px;
     display: inline-block;
 }
 .content_text .content .title{
