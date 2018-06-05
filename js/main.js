@@ -74,6 +74,8 @@ $(function () {
     // 隐藏menu
     function hideMenu() {
         $("header .delete").css('display', 'block');
+        $("header .delete").css('opacity', 0);
+        $("header .delete").css('z-index', 100);
         $("header .links").css('display', 'flex');
         // 隐藏icon
         $("header .icon").animate({
