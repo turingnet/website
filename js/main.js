@@ -3,7 +3,7 @@ $(function () {
     // 根据query参数跳至相应区块
     var blockName = getRequest().name || "";
 
-    if(/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
+    if(/Android|webOS|iPhone|iPod|iPad|BlackBerry/i.test(navigator.userAgent) && window.orientation === 0) {
         // 手机端初始化
          $("header .delete").css('display', 'none');
          $("header .links").css('display', 'none');
@@ -19,6 +19,11 @@ $(function () {
             easing: "swing"
         })
     }
+
+    // 监听屏幕旋转
+    $(window).bind('orientationchange', function(e){
+        window.location.reload();
+    });
 
     // 获取query参数
     function getRequest() {

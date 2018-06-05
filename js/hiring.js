@@ -5,11 +5,16 @@ $(function () {
         window.location.href = './index.html?name=' + $(this).attr("href").substring(1, $(this).attr("href").length);
     });
 
-    if(/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
+    if(/Android|webOS|iPhone|iPod|iPad|BlackBerry/i.test(navigator.userAgent) && window.orientation === 0) {
        // 手机端初始化
         $("header .delete").css('display', 'none');
         $("header .links").css('display', 'none');
     }
+
+    // 监听屏幕旋转
+    $(window).bind('orientationchange', function(e){
+        window.location.reload();
+    });
 
     // 获取屏幕可见区域高度
     function getClientHeight() {
