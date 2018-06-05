@@ -3,16 +3,20 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
     <link rel="icon" href="favicon.ico" />
     <title>TuringNet</title>
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/swiper.min.css">
-    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/main-large.css" media="screen and (min-device-width: 768px)">
+    <link rel="stylesheet" href="./assets/css/main-small.css" media="screen and (max-device-width: 768px)">
 </head>
 
 <body>
     <header>
         <img src="./assets/imgs/logo2@2x.png" class="icon">
+        <img src="./assets/imgs/menu_icon.png" class="menu small">
+        <img src="./assets/imgs/delete_icon.png" class="delete small">
         <div class="links">
             <a class="link_item first" href="#block1">Mission</a>
             <a class="link_item second" href="#block2">Why</a>
@@ -90,14 +94,15 @@
     <section id="block4" class="block item5">
         <div class="content">
             <div class="title">Team</div>
-            <div class="cards_container">
+            <!-- large screen -->
+            <div class="cards_container large">
                 <div class="swiper-container swiper_cards swiper-container-t">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="card radius">
                                 <div class="name">Jun Hong</div>
                                 <div class="dec">
-				    Co-Founder & CEO <br/>
+				                    Co-Founder & CEO <br/>
                                     Ex-Google, Microsoft and Amazon <br/>
                                     Founder of ABC Blockchain Foundation<br/>
                                     Chairman of Open Source Software Associations of Chinese Academy of Sciences <br/>
@@ -105,15 +110,15 @@
                                 </div>
                             </div>
                         </div>
-			<div class="swiper-slide">
+			            <div class="swiper-slide">
                             <div class="card radius">
                                 <div class="name">Li Bian</div>
                                 <div class="dec">
-				    Co-Founder & COO <br/>
-				    Co-founder of Emotibot, a virtual AI companion chatbot company <br/>
+				                    Co-Founder & COO <br/>
+				                    Co-founder of Emotibot, a virtual AI companion chatbot company <br/>
                                     Founder of Truonex, a vertical search engine startup for researchers <br/>
                                     MIT Electrical Engineering and Computer Science; MIT Media Lab <br/>
-			            Danish Design School <br/>
+			                        Danish Design School <br/>
                                     Specialized in NLP, search and recommendation systems, Human-Computer Interaction Design <br/>
                                </div>
                             </div>
@@ -133,8 +138,40 @@
                 <!-- <div class="swiper-button-next swiper-button-next-t"></div>
                 <div class="swiper-button-prev swiper-button-prev-t"></div> -->
             </div>
+            <!-- small screen -->
+            <div class="cards_container small">
+                <div class="card radius">
+                    <div class="name">Jun Hong</div>
+                    <div class="dec">
+                        Co-Founder & CEO <br/>
+                        Ex-Google, Microsoft and Amazon <br/>
+                        Founder of ABC Blockchain Foundation<br/>
+                        Chairman of Open Source Software Associations of Chinese Academy of Sciences <br/>
+                        Specialized in AI: machine learning, deep learning, recommendation systems, video /image understanding, GAN.<br/>
+                    </div>
+                </div>
+                <div class="card radius">
+                    <div class="name">Li Bian</div>
+                    <div class="dec">
+                        Co-Founder & COO <br/>
+                        Co-founder of Emotibot, a virtual AI companion chatbot company <br/>
+                        Founder of Truonex, a vertical search engine startup for researchers <br/>
+                        MIT Electrical Engineering and Computer Science; MIT Media Lab <br/>
+                        Danish Design School <br/>
+                        Specialized in NLP, search and recommendation systems, Human-Computer Interaction Design <br/>
+                   </div>
+                </div>
+                <div class="card radius">
+                    <div class="name">Adrian Wang</div>
+                    <div class="dec">
+                        Founder of trustedBridge.com <br/>
+                        Specialized in distributed System, Trused Cloud Storage, Cryptography <br/>
+                    </div>
+                </div>
+            </div>
             <div id="block5" class="title2">Advisors</div>
-            <div class="cards_container">
+            <!-- large screen -->
+            <div class="cards_container large">
                 <div class="swiper-container swiper_cards  swiper-container-b">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
@@ -170,6 +207,31 @@
                 <!-- Add Arrows -->
                 <!-- <div class="swiper-button-next swiper-button-next-b"></div>
                 <div class="swiper-button-prev swiper-button-prev-b"></div> -->
+            </div>
+            <!-- small screen -->
+            <div class="cards_container small">
+                <div class="card advisors radius">
+                    <div class="name">Joanie Xie</div>
+                    <div class="dec">
+                        Director of Business Development, Alipay US<br/>
+                        Former VP of Goldman Sachs<br/>
+                    </div>
+                </div>
+                <div class="card advisors radius">
+                    <div class="name">Jack Yang</div>
+                    <div class="dec">
+                        Partner at INBlockchain Capital<br/>
+                        Former VP of Product at Mobile<br/>
+                        Ex-Uber and Facebook product manager <br/>
+                    </div>
+                </div>
+                <div class="card advisors radius">
+                    <div class="name">Benjamin Qiu</div>
+                    <div class="dec">
+                        Attorney, Partner of LOEB&LOEB LLC<br/>
+                        &nbsp<br/>
+                    </div>
+                </div>
             </div>
         </div>
     </section>

@@ -1,0 +1,585 @@
+/* 全局变量 */
+:root{
+    --large-screen-width: 86%;
+    --large-screen-margin-left: 7%;
+    --large-screen-padding-top-bottom: 20px;
+    --large-introduce-padding-top-bottom: 20px;
+    --large-card-padding-top-bottom: 20px;
+}
+body .large{
+    display: none;
+}
+body .small{
+    display: block;
+}
+
+/* 头部样式 */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 70px;
+    width: 100%;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, 0);
+    transition: all 0.3s;
+    z-index: 1000;
+}
+
+.header_down {
+    height: 40px;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.icon {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    height: 20px;
+}
+
+.menu{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 20px;
+}
+
+.delete{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 20px;
+}
+
+header .links {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    font-size: 16px;
+    background: rgba(0, 0, 0, 0.9);
+    padding: 0 20px;
+}
+
+.link_item_active {
+    color: #FFFFFF !important;
+}
+
+.link_item{
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    border-bottom: 1px #444444 solid;
+}
+
+.link_item:first-child{
+    margin-top: 30px;
+}
+
+.link_item:hover {
+    color: #34fefa;
+}
+
+/* 内容 */
+
+.block {
+    position: relative;
+    width: 100%;
+}
+
+.block .center {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+/* 第一块 */
+
+.item1 {
+    height: 200px;
+    background: url("http://ovn188pj2.bkt.gdipper.com/bg1_20180402.png") no-repeat;
+    /*background: url("../imgs/bg1_20180402.png") no-repeat;*/
+    background-size: cover;
+    background-position:center center
+}
+
+.item1 .content {
+    width: 100%;
+    height: 24px;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+}
+
+.item1 .button {
+    position: relative;
+    top: 40px;
+    margin-top: 20px;
+    padding: 10px 40px;
+    border: 1px #6c6b69 solid;
+    font-size: 16px;
+    border-radius: 3px;
+    transition: all 0.8s;
+}
+
+.button_hover {
+    background: #FCAB28;
+    border: 1px rgba(0, 0, 0, 0) solid!important;
+}
+
+/* 第二块 */
+
+.item2 {
+    background: url("http://ovn188pj2.bkt.gdipper.com/bg2_20180402.png") no-repeat;
+    background-size: cover;
+}
+
+.item2 .content {
+    width: var(--large-screen-width);
+    margin-left: var(--large-screen-margin-left);
+    color: #fff;
+    font-size: 20px;
+    padding: var(--large-screen-padding-top-bottom) 0;
+}
+
+.item2 .title {
+    margin-top: 40px 0;
+    font-weight: 100;
+}
+
+.item2 .dec {
+    background: rgba(0, 213, 255, 0.1);
+    border-radius: 5px;
+    margin: 20px 0;
+    padding: 15px 20px;
+}
+
+.item2 .subtitle {
+    font-size: 16px;
+    color: #FCAB28;
+}
+
+.item2 .text {
+    font-size: 13px;
+    font-weight: 400;
+    margin: 10px 0 5px 0;
+}
+
+/* 第三块 */
+
+.item3 {
+    background-color: #1c1c1c;
+}
+
+.item3 .content {
+    width: var(--large-screen-width);
+    margin-left: var(--large-screen-margin-left);
+    color: #fff;
+    font-size: 20px;
+    padding: var(--large-screen-padding-top-bottom) 0;
+}
+
+.item3 .title {
+    font-weight: 100;
+    font-size: 20px;
+    margin-bottom: 65px;
+}
+
+.item3 .subtitle {
+    font-weight: 300;
+    font-size: 20px;
+    color: #FCAB28;
+}
+
+.item3 .text {
+    font-size: 12px;
+    line-height: 20px;
+    color: #8c8c8c;
+    margin: 20px 0;
+    opacity: 0.5;
+}
+
+/* 第四块 */
+
+.item4 {
+    background-color: #141514;
+}
+
+.item4 .content {
+    width: var(--large-screen-width);
+    margin-left: var(--large-screen-margin-left);
+    color: #fff;
+    font-size: 20px;
+    padding: var(--large-screen-padding-top-bottom) 0
+}
+
+.item4 .title {
+    font-weight: 100;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.item4 .subtitle {
+    font-weight: 200;
+    font-size: 12px;
+    line-height: 32px;
+    color: #FFFFFF;
+    opacity: 0.6;
+}
+
+.item4 .img_container {
+    position: relative;
+    margin: 60px 0;
+    height: 200px;
+    width: 100%;
+    text-align: center;
+}
+
+.item4 .img_container img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.item4 .contain {
+    border-top: #2b2c2b 1px solid;
+    display: flex;
+    flex-direction: column;
+    padding-top: 80px;
+    padding-bottom: 50px;
+    align-items: center;
+}
+
+.item4 .contain .item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.item4 .contain .item .dec{
+    font-size: 14px;
+}
+
+.item4 .contain .item{
+    width: 80%;
+}
+
+.item4 .contain .item .dec{
+    font-size: 18px;
+}
+
+.item4 .contain .item:not(:first-child) {
+    margin-top: 40px;
+}
+
+.item4 .contain .item img {
+    height: 32px;
+}
+
+.item4 .contain .item .mini_title {
+    font-size: 16px;
+    font-weight: 200;
+    margin: 25px 0 20px 0;
+}
+
+.item4 .contain .item .line {
+    width: 60px;
+    height: 4px;
+    background: #FCAB28;
+    border-radius: 3px;
+    margin-bottom: 30px;
+}
+
+.item4 .contain .item .dec {
+    opacity: 0.5;
+    color: #FFFFFF;
+    line-height: 24px;
+    font-size: 10px;
+}
+
+.item5 {
+    background: url("http://ovn188pj2.bkt.gdipper.com/bg3.jpg") no-repeat;
+    background-size: cover;
+    background-position:center center;
+    user-select: none;
+    padding-bottom: 20px;
+}
+
+.item5 .content {
+    width: var(--large-screen-width);
+    margin-left: var(--large-screen-margin-left);
+    color: #fff;
+    font-size: 20px;
+    padding: var(--large-screen-padding-top-bottom) 0 0 0;
+}
+
+.item5 .title {
+    font-weight: 100;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.item5 .title2 {
+    margin-top: 20px;
+    border-top: #2b2c2b 1px solid;
+    font-weight: 200;
+    font-size: 20px;
+    padding: 20px 0;
+}
+
+.item5 .card {
+    flex: 1;
+    position: relative;
+    background: rgba(24, 24, 24, 0.8);
+    padding-bottom: 10px;
+}
+
+.item5 .radius{
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+.item5 .advisors {
+    padding-top: 10px;
+}
+
+.item5 .card:not(:first-child) {
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.item5 .card .avator {
+    width: 100%;
+}
+
+.item5 .card .name {
+    font-family: "HelveticaNeue-Bold";
+    font-weight: 600;
+    font-size: 16px;
+    color: #FCAB28;
+    line-height: 20px;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 24px;
+}
+
+.item5 .card .job {
+    font-size: 15px;
+    color: #36ffff;
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 10px;
+}
+
+.item5 .card .dec {
+    font-size: 12px;
+    color: #8a8a8a;
+    line-height: 20px;
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 10px;
+    margin-top: 12px;
+}
+
+/* 第六块 */
+
+.item6 {
+    height: 250px;
+    background-color: #141514;
+}
+
+.item6 .content {
+    width: var(--large-screen-width);
+}
+
+.item6 .title {
+    font-weight: 200;
+    font-size: 20px;
+    margin: 20px 0;
+    color: #fff;
+}
+
+.item6 .subtitle {
+    position: absolute;
+    top: 140px;
+    transform: translateY(-50%);
+    left: 0;
+    font-weight: 400;
+    font-size: 14px;
+    color: #FCAB28;
+}
+
+.item6 .subtitle a {
+    color: #FCAB28;
+}
+
+.item6 .icon{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: 51%;
+    left: 60%;
+    z-index: 1;
+}
+
+.item6 .bg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    height: 250px;
+    width: 323px;
+    background: url("http://ovn188pj2.bkt.gdipper.com/pic_map_20180402.png") no-repeat;
+    background-size: cover;
+}
+
+/* footer */
+
+footer {
+    height: 30px;
+    line-height: 30px;
+    width: 100%;
+    color: #a2a2a2;
+    background: #030303;
+    text-align: right;
+    box-sizing: border-box;
+    font-size: 9px;
+    padding-right: 30px;
+}
+
+/* contact.html */
+.content_text{
+    font-size: 16px;
+    color: #d4d4d4;
+    background: #0e0e0e;
+    font-weight: 300;
+}
+.introduce{
+    position: relative;
+    width: var(--large-screen-width);
+    margin-left: var(--large-screen-margin-left);
+    padding: var(--large-introduce-padding-top-bottom) 0;
+    border-bottom: 1px #2a2a2a solid;
+}
+.introduce .img_wapper{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: inline-block;
+    width: 188px;
+    height: 188px;
+    margin-top: calc()
+}
+.introduce .logo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 188px;
+    height: 188px;
+}
+.content_text .content{
+    display: inline-block;
+}
+.content_text .content .title{
+    font-size: 20px;
+    color: #fba124;
+    margin: 10px 0;
+}
+.content_text .content .text{
+    width: 100%;
+    font-size: 12px;
+    margin: 20px 0;
+    line-height: 25px; 
+}
+.content_text .content .mail a{
+    color: #1868d4;
+}
+.content_text .position{
+    position: relative;
+    width: var(--large-screen-width);
+    margin-left: var(--large-screen-margin-left);
+    padding: var(--large-introduce-padding-top-bottom) 0;
+    font-size: 20px;
+}
+.content_text .tabs{
+    display: flex;
+    position: relative;
+    width: var(--large-screen-width);
+    margin-left: var(--large-screen-margin-left);
+    font-size: 14px;
+    border-bottom: 1px #2a2a2a solid;
+}
+.content_text .tabs .item:not(:first-child){
+    margin-left: 50px;
+}
+.content_text .tabs .active{
+    padding: 0 0 10px 0;
+    border-bottom: 1px #ff9710 solid;
+}
+.content_text .card{
+    width: var(--large-screen-width);
+    margin-left: var(--large-screen-margin-left);
+    font-size: 12px;
+    padding: var(--large-card-padding-top-bottom) 0;
+}
+.content_text .card:not(:last-child){
+    border-bottom: 1px #2a2a2a solid;
+}
+.content_text .card .title{
+    color: #fba124;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.content_text .card p{
+    margin-bottom: 20px; 
+}
+.content_text .card .text{
+    line-height: 25px; 
+}
+.content_text .card .subtitle{
+    font-size: 22px;
+    margin: 20px 0 30px 0;
+}
+.content_text .swiper-slide{
+    padding: 0;
+}
+/* swiper */
+
+.swiper-button-next {
+    opacity: 0.2;
+    right: -85px;
+    background-image: url("../imgs/next.png");
+    transform: scaleY(0.7);
+}
+
+.swiper-slide{
+    box-sizing: border-box;
+    padding: 0 15px;
+}
+
+.swiper-button-next:hover{
+    opacity: 1;
+}
+
+.swiper-button-prev {
+    opacity: 0.2;
+    left: -85px;
+    background-image: url("../imgs/pre.png");
+    transform: scaleY(0.7);
+}
+
+.swiper-button-prev:hover {
+    opacity: 1;
+}

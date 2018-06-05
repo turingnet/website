@@ -3,11 +3,17 @@ $(function () {
     // 根据query参数跳至相应区块
     var blockName = getRequest().name || "";
 
+    if(/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
+        // 手机端初始化
+         $("header .delete").css('display', 'none');
+         $("header .links").css('display', 'none');
+     }
+
     if (blockName) {
         $("html, body").animate({
-            scrollTop: $("#" + blockName)
+            scrollTop: ($("#" + blockName)
                 .offset()
-                .top + "px"
+                .top - 40) + "px"
         }, {
             duration: 600,
             easing: "swing"
@@ -28,12 +34,90 @@ $(function () {
         return theRequest;
     }
 
+    // 展示menu
+    function showMenu() {
+        $("header .menu").css('display', 'block');
+        $("header .links").css('display', 'none');
+        // 显示icon
+        $("header .icon").animate({
+            opacity: 1
+        }, {
+            duration: 600,
+            easing: "swing"
+        })
+        // 显示menu
+        $("header .menu").animate({
+            opacity: 1
+        }, {
+            duration: 600,
+            easing: "swing"
+        })
+        // 隐藏delete
+        $("header .delete").animate({
+            opacity: 0
+        }, {
+            duration: 600,
+            easing: "swing"
+        })
+        // 隐藏links
+        $("header .links").animate({
+            opacity: 0
+        }, {
+            duration: 600,
+            easing: "swing"
+        })
+        setTimeout(function() {
+            $("header .delete").css('display', 'none');
+        }, 600);
+    }
+
+    // 隐藏menu
+    function hideMenu() {
+        $("header .delete").css('display', 'block');
+        $("header .links").css('display', 'flex');
+        // 隐藏icon
+        $("header .icon").animate({
+            opacity: 0
+        }, {
+            duration: 600,
+            easing: "swing"
+        })
+        // 隐藏menu
+        $("header .menu").animate({
+            opacity: 0
+        }, {
+            duration: 600,
+            easing: "swing"
+        })
+        // 显示delete
+        $("header .delete").animate({
+            opacity: 1
+        }, {
+            duration: 600,
+            easing: "swing"
+        })
+        // 显示links
+        $("header .links").animate({
+            opacity: 1
+        }, {
+            duration: 600,
+            easing: "swing"
+        })
+        setTimeout(function() {
+            $("header .menu").css('display', 'none');
+        }, 600);
+    }
+
     // 点击导航操作
     $(".link_item").click(function () {
+        if(/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
+            // 显示menu
+            showMenu();
+        }
         $("html, body").animate({
-            scrollTop: $($(this).attr("href"))
+            scrollTop: ($($(this).attr("href"))
                 .offset()
-                .top + "px"
+                .top - 40)+ "px"
         }, {
             duration: 600,
             easing: "swing"
@@ -51,6 +135,18 @@ $(function () {
             duration: 600,
             easing: "swing"
         })
+        return false;
+    });
+
+    // 手机端点击 右上角菜单
+    $("header .menu").click(function () {
+        hideMenu();
+        return false;
+    });
+
+    // 手机端点击 右上角关闭菜单
+    $("header .delete").click(function () {
+        showMenu();
         return false;
     });
 

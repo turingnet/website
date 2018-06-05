@@ -1,3 +1,19 @@
+/* 全局变量 */
+/* large screen */
+:root{
+    --large-screen-width: 70%;
+    --large-screen-margin-left: 15%;
+    --large-screen-padding-top-bottom: 65px;
+    --large-introduce-padding-top-bottom: 50px;
+    --large-card-padding-top-bottom: 50px;
+}
+body .large{
+    display: block;
+}
+body .small{
+    display: none;
+}
+
 /* 头部样式 */
 
 header {
@@ -30,10 +46,6 @@ header .links {
     line-height: 75px;
     font-size: 16px;
 }
-
-/*body {*/
-    /*background-color:black;*/
-/*}*/
 
 .link_item_active {
     color: #FFFFFF !important;
@@ -104,11 +116,11 @@ header .links {
 }
 
 .item2 .content {
-    width: 70%;
-    margin-left: 15%;
+    width: var(--large-screen-width);
+    margin-left: var(--large-screen-margin-left);
     color: #fff;
     font-size: 40px;
-    padding: 65px 0;
+    padding: var(--large-screen-padding-top-bottom) 0;
 }
 
 .item2 .title {
@@ -141,11 +153,11 @@ header .links {
 }
 
 .item3 .content {
-    width: 70%;
-    margin-left: 15%;
+    width: var(--large-screen-width);
+    margin-left: var(--large-screen-margin-left);
     color: #fff;
     font-size: 20px;
-    padding: 65px 0;
+    padding: var(--large-screen-padding-top-bottom) 0;
 }
 
 .item3 .title {
@@ -168,6 +180,12 @@ header .links {
     opacity: 0.5;
 }
 
+@media only screen and (max-device-width: 768px){
+    .item3 .text {
+        font-size: 14px;
+    }
+}
+
 /* 第四块 */
 
 .item4 {
@@ -175,11 +193,11 @@ header .links {
 }
 
 .item4 .content {
-    width: 70%;
-    margin-left: 15%;
+    width: var(--large-screen-width);
+    margin-left: var(--large-screen-margin-left);
     color: #fff;
     font-size: 20px;
-    padding: 65px 0
+    padding: var(--large-screen-padding-top-bottom) 0
 }
 
 .item4 .title {
@@ -194,6 +212,12 @@ header .links {
     line-height: 32px;
     color: #FFFFFF;
     opacity: 0.6;
+}
+
+@media only screen and (max-device-width: 768px){
+    .item4 .subtitle {
+        font-size: 14px;
+    }
 }
 
 .item4 .img_container {
@@ -215,12 +239,14 @@ header .links {
     max-width: 100%;
 }
 
+/* large screen */
 .item4 .contain {
     border-top: #2b2c2b 1px solid;
     display: flex;
     padding-top: 80px;
     padding-bottom: 50px;
 }
+
 
 .item4 .contain .item {
     flex: 1;
@@ -254,7 +280,6 @@ header .links {
 
 .item4 .contain .item .dec {
     opacity: 0.5;
-    font-size: 14px;
     color: #FFFFFF;
     line-height: 24px;
 }
@@ -267,11 +292,11 @@ header .links {
 }
 
 .item5 .content {
-    width: 70%;
-    margin-left: 15%;
+    width: var(--large-screen-width);
+    margin-left: var(--large-screen-margin-left);
     color: #fff;
     font-size: 20px;
-    padding: 65px 0 0 0;
+    padding: var(--large-screen-padding-top-bottom) 0 0 0;
 }
 
 .item5 .title {
@@ -310,6 +335,7 @@ header .links {
     padding-top: 10px;
 }
 
+/* large screen */
 .item5 .card:not(:last-child) {
     margin-right: 20px;
 }
@@ -356,7 +382,7 @@ header .links {
 
 .item6 .content {
     height: 640px;
-    width: 70%;
+    width: var(--large-screen-width);
 }
 
 .item6 .title {
@@ -423,9 +449,9 @@ footer {
 }
 .introduce{
     position: relative;
-    width: 70%;
-    margin-left: 15%;
-    padding: 50px 0;
+    width: var(--large-screen-width);
+    margin-left: var(--large-screen-margin-left);
+    padding: var(--large-introduce-padding-top-bottom) 0;
     border-bottom: 1px #2a2a2a solid;
 }
 .introduce .img_wapper{
@@ -464,16 +490,16 @@ footer {
 }
 .content_text .position{
     position: relative;
-    width: 70%;
-    margin-left: 15%;
-    padding: 50px 0;
+    width: var(--large-screen-width);
+    margin-left: var(--large-screen-margin-left);
+    padding: var(--large-introduce-padding-top-bottom) 0;
     font-size: 32px;
 }
 .content_text .tabs{
     display: flex;
     position: relative;
-    width: 70%;
-    margin-left: 15%;
+    width: var(--large-screen-width);
+    margin-left: var(--large-screen-margin-left);
     font-size: 20px;
     border-bottom: 1px #2a2a2a solid;
 }
@@ -488,10 +514,10 @@ footer {
     border-bottom: 1px #ff9710 solid;
 }
 .content_text .card{
-    width: 70%;
-    margin-left: 15%;
+    width: var(--large-screen-width);
+    margin-left: var(--large-screen-margin-left);
     font-size: 16px;
-    padding: 40px 0;
+    padding: var(--large-card-padding-top-bottom) 0;
 }
 .content_text .card:not(:last-child){
     border-bottom: 1px #2a2a2a solid;

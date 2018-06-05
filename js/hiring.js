@@ -5,6 +5,12 @@ $(function () {
         window.location.href = './index.html?name=' + $(this).attr("href").substring(1, $(this).attr("href").length);
     });
 
+    if(/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
+       // 手机端初始化
+        $("header .delete").css('display', 'none');
+        $("header .links").css('display', 'none');
+    }
+
     // 获取屏幕可见区域高度
     function getClientHeight() {
         var clientHeight = 0;
@@ -20,10 +26,111 @@ $(function () {
         return clientHeight;
     }
 
+    // 展示menu
+    function showMenu() {
+        $("header .menu").css('display', 'block');
+        $("header .links").css('display', 'none');
+        // 显示icon
+        $("header .icon").animate({
+            opacity: 1
+        }, {
+            duration: 600,
+            easing: "swing"
+        })
+        // 显示menu
+        $("header .menu").animate({
+            opacity: 1
+        }, {
+            duration: 600,
+            easing: "swing"
+        })
+        // 隐藏delete
+        $("header .delete").animate({
+            opacity: 0
+        }, {
+            duration: 600,
+            easing: "swing"
+        })
+        // 隐藏links
+        $("header .links").animate({
+            opacity: 0
+        }, {
+            duration: 600,
+            easing: "swing"
+        })
+        setTimeout(function() {
+            $("header .delete").css('display', 'none');
+        }, 600);
+    }
+
+    // 隐藏menu
+    function hideMenu() {
+        $("header .delete").css('display', 'block');
+        $("header .links").css('display', 'flex');
+        // 隐藏icon
+        $("header .icon").animate({
+            opacity: 0
+        }, {
+            duration: 600,
+            easing: "swing"
+        })
+        // 隐藏menu
+        $("header .menu").animate({
+            opacity: 0
+        }, {
+            duration: 600,
+            easing: "swing"
+        })
+        // 显示delete
+        $("header .delete").animate({
+            opacity: 1
+        }, {
+            duration: 600,
+            easing: "swing"
+        })
+        // 显示links
+        $("header .links").animate({
+            opacity: 1
+        }, {
+            duration: 600,
+            easing: "swing"
+        })
+        setTimeout(function() {
+            $("header .menu").css('display', 'none');
+        }, 600);
+    }
+
+    // 手机端点击 右上角菜单
+    $("header .menu").click(function () {
+        hideMenu();
+        return false;
+    });
+
+    // 手机端点击 右上角关闭菜单
+    $("header .delete").click(function () {
+        showMenu();
+        return false;
+    });
+
     // 初始化swiper
     var jobSwiper = new Swiper('.swiper-container', {
         loop: false,
-        loopFillGroupWithBlank: true
+        loopFillGroupWithBlank: true,
+        on: {
+            progress: function(progress){
+                if(progress == 1) {
+                    for(var i = 0;i < $('.tabs').find(".item").length;i++){
+                        $('.tabs').find(".item")[i].classList.remove('active');
+                    }
+                    $($('.tabs').find(".item")[1]).addClass('active');
+                } else {
+                    for(var i = 0;i < $('.tabs').find(".item").length;i++){
+                        $('.tabs').find(".item")[i].classList.remove('active');
+                    }
+                    $($('.tabs').find(".item")[0]).addClass('active');
+                }
+            }
+        },
     });
 
     $(".tabs > .item").click(function () {
