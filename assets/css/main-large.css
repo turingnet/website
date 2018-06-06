@@ -52,7 +52,7 @@ header .links {
 }
 
 .link_item:hover {
-    color: #34fefa;
+    color: blue;
 }
 
 .link_item:not(:first-child) {
