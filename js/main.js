@@ -174,7 +174,7 @@ $(function () {
 
     // 初始化swiper
     var swiper1 = new Swiper('.swiper-container-t', {
-        slidesPerView: 4,
+        slidesPerView: 3,
         spaceBetween: 30,
         slidesPerGroup: 1,
         loop: false,
@@ -186,7 +186,7 @@ $(function () {
     });
 
     var swiper2 = new Swiper('.swiper-container-b', {
-        slidesPerView: 4,
+        slidesPerView: 3,
         spaceBetween: 30,
         slidesPerGroup: 1,
         loop: false,
