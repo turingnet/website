@@ -79,8 +79,8 @@ header .links {
 
 .item1 {
     height: 700px;
-    background: url("http://ovn188pj2.bkt.gdipper.com/bg1_20180402.png") no-repeat;
-    /*background: url("../imgs/bg1_20180402.png") no-repeat;*/
+/*     background: url("http://ovn188pj2.bkt.gdipper.com/bg1_20180402.png") no-repeat; */
+    background: url("../imgs/bg1_20180402.png") no-repeat;
     background-size: cover;
 }
 
