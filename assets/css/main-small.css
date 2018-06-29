@@ -1,4 +1,3 @@
-/* 全局变量 */
 :root{
     --large-screen-width: 86%;
     --large-screen-margin-left: 7%;
@@ -12,9 +11,6 @@ body .large{
 body .small{
     display: block;
 }
-
-/* 头部样式 */
-
 header {
     position: fixed;
     top: 0;
@@ -26,33 +22,28 @@ header {
     transition: all 0.3s;
     z-index: 1000;
 }
-
 .header_down {
     height: 40px;
     background: rgba(0, 0, 0, 0.5);
 }
-
 .icon {
     position: absolute;
     top: 10px;
     left: 10px;
     height: 20px;
 }
-
 .menu{
     position: absolute;
     top: 10px;
     right: 10px;
     width: 20px;
 }
-
 .delete{
     position: absolute;
     top: 10px;
     right: 10px;
     width: 20px;
 }
-
 header .links {
     display: flex;
     flex-direction: column;
@@ -61,33 +52,25 @@ header .links {
     background: rgba(0, 0, 0, 0.9);
     padding: 0 20px;
 }
-
 .link_item_active {
     color: #FFFFFF !important;
 }
-
 .link_item{
     height: 28px;
     line-height: 28px;
     text-align: center;
     border-bottom: 1px #444444 solid;
 }
-
 .link_item:first-child{
     margin-top: 30px;
 }
-
 .link_item:hover {
     color: blue;
 }
-
-/* 内容 */
-
 .block {
     position: relative;
     width: 100%;
 }
-
 .block .center {
     position: absolute;
     top: 0;
@@ -96,17 +79,12 @@ header .links {
     right: 0;
     margin: auto;
 }
-
-/* 第一块 */
-
 .item1 {
     height: 200px;
-/*     background: url("http://ovn188pj2.bkt.gdipper.com/bg1_20180402.png") no-repeat; */
     background: url("../imgs/bg1_20180402.png") no-repeat;
     background-size: cover;
     background-position:center center
 }
-
 .item1 .content {
     width: 100%;
     height: 24px;
@@ -114,7 +92,6 @@ header .links {
     font-size: 18px;
     text-align: center;
 }
-
 .item1 .button {
     position: relative;
     top: 40px;
@@ -125,19 +102,14 @@ header .links {
     border-radius: 3px;
     transition: all 0.8s;
 }
-
 .button_hover {
     background: #FCAB28;
     border: 1px rgba(0, 0, 0, 0) solid!important;
 }
-
-/* 第二块 */
-
 .item2 {
     background: url("http://ovn188pj2.bkt.gdipper.com/bg2_20180402.png") no-repeat;
     background-size: cover;
 }
-
 .item2 .content {
     width: var(--large-screen-width);
     margin-left: var(--large-screen-margin-left);
@@ -145,36 +117,28 @@ header .links {
     font-size: 20px;
     padding: var(--large-screen-padding-top-bottom) 0;
 }
-
 .item2 .title {
     margin-top: 40px 0;
     font-weight: 100;
 }
-
 .item2 .dec {
     background: rgba(0, 213, 255, 0.1);
     border-radius: 5px;
     margin: 20px 0;
     padding: 15px 20px;
 }
-
 .item2 .subtitle {
     font-size: 16px;
     color: #FCAB28;
 }
-
 .item2 .text {
     font-size: 13px;
     font-weight: 400;
     margin: 10px 0 5px 0;
 }
-
-/* 第三块 */
-
 .item3 {
     background-color: #1c1c1c;
 }
-
 .item3 .content {
     width: var(--large-screen-width);
     margin-left: var(--large-screen-margin-left);
@@ -182,19 +146,16 @@ header .links {
     font-size: 20px;
     padding: var(--large-screen-padding-top-bottom) 0;
 }
-
 .item3 .title {
     font-weight: 100;
     font-size: 20px;
     margin-bottom: 65px;
 }
-
 .item3 .subtitle {
     font-weight: 300;
     font-size: 20px;
     color: #FCAB28;
 }
-
 .item3 .text {
     font-size: 12px;
     line-height: 20px;
@@ -202,13 +163,9 @@ header .links {
     margin: 20px 0;
     opacity: 0.5;
 }
-
-/* 第四块 */
-
 .item4 {
     background-color: #141514;
 }
-
 .item4 .content {
     width: var(--large-screen-width);
     margin-left: var(--large-screen-margin-left);
@@ -216,13 +173,11 @@ header .links {
     font-size: 20px;
     padding: var(--large-screen-padding-top-bottom) 0
 }
-
 .item4 .title {
     font-weight: 100;
     font-size: 20px;
     margin-bottom: 30px;
 }
-
 .item4 .subtitle {
     font-weight: 200;
     font-size: 12px;
@@ -230,7 +185,6 @@ header .links {
     color: #FFFFFF;
     opacity: 0.6;
 }
-
 .item4 .img_container {
     position: relative;
     margin: 10px 0;
@@ -238,7 +192,6 @@ header .links {
     width: 100%;
     text-align: center;
 }
-
 .item4 .img_container img {
     position: absolute;
     top: 0;
@@ -249,7 +202,6 @@ header .links {
     max-height: 100%;
     max-width: 100%;
 }
-
 .item4 .contain {
     border-top: #2b2c2b 1px solid;
     display: flex;
@@ -258,7 +210,6 @@ header .links {
     padding-bottom: 50px;
     align-items: center;
 }
-
 .item4 .contain .item {
     flex: 1;
     display: flex;
@@ -266,33 +217,26 @@ header .links {
     text-align: center;
     align-items: center;
 }
-
 .item4 .contain .item .dec{
     font-size: 14px;
 }
-
 .item4 .contain .item{
     width: 80%;
 }
-
 .item4 .contain .item .dec{
     font-size: 18px;
 }
-
 .item4 .contain .item:not(:first-child) {
     margin-top: 40px;
 }
-
 .item4 .contain .item img {
     height: 32px;
 }
-
 .item4 .contain .item .mini_title {
     font-size: 16px;
     font-weight: 200;
     margin: 25px 0 20px 0;
 }
-
 .item4 .contain .item .line {
     width: 60px;
     height: 4px;
@@ -300,14 +244,12 @@ header .links {
     border-radius: 3px;
     margin-bottom: 30px;
 }
-
 .item4 .contain .item .dec {
     opacity: 0.5;
     color: #FFFFFF;
     line-height: 24px;
     font-size: 10px;
 }
-
 .item5 {
     background: url("http://ovn188pj2.bkt.gdipper.com/bg3.jpg") no-repeat;
     background-size: cover;
@@ -315,7 +257,6 @@ header .links {
     user-select: none;
     padding-bottom: 20px;
 }
-
 .item5 .content {
     width: var(--large-screen-width);
     margin-left: var(--large-screen-margin-left);
@@ -323,13 +264,11 @@ header .links {
     font-size: 20px;
     padding: var(--large-screen-padding-top-bottom) 0 0 0;
 }
-
 .item5 .title {
     font-weight: 100;
     font-size: 20px;
     margin-bottom: 20px;
 }
-
 .item5 .title2 {
     margin-top: 20px;
     border-top: #2b2c2b 1px solid;
@@ -337,32 +276,26 @@ header .links {
     font-size: 20px;
     padding: 20px 0;
 }
-
 .item5 .card {
     flex: 1;
     position: relative;
     background: rgba(24, 24, 24, 0.8);
     padding-bottom: 10px;
 }
-
 .item5 .radius{
     overflow: hidden;
     border-radius: 4px;
 }
-
 .item5 .advisors {
     padding-top: 10px;
 }
-
 .item5 .card:not(:first-child) {
     margin-top: 20px;
     border-radius: 10px;
 }
-
 .item5 .card .avator {
     width: 100%;
 }
-
 .item5 .card .name {
     font-family: "HelveticaNeue-Bold";
     font-weight: 600;
@@ -373,7 +306,6 @@ header .links {
     margin-left: 5%;
     margin-top: 24px;
 }
-
 .item5 .card .job {
     font-size: 15px;
     color: #36ffff;
@@ -381,7 +313,6 @@ header .links {
     margin-left: 5%;
     margin-bottom: 10px;
 }
-
 .item5 .card .dec {
     font-size: 12px;
     color: #8a8a8a;
@@ -391,25 +322,19 @@ header .links {
     margin-bottom: 10px;
     margin-top: 12px;
 }
-
-/* 第六块 */
-
 .item6 {
     height: 250px;
     background-color: #141514;
 }
-
 .item6 .content {
     width: var(--large-screen-width);
 }
-
 .item6 .title {
     font-weight: 200;
     font-size: 20px;
     margin: 20px 0;
     color: #fff;
 }
-
 .item6 .subtitle {
     position: absolute;
     top: 140px;
@@ -419,11 +344,9 @@ header .links {
     font-size: 14px;
     color: #FCAB28;
 }
-
 .item6 .subtitle a {
     color: #FCAB28;
 }
-
 .item6 .icon{
     position: absolute;
     width: 15px;
@@ -432,7 +355,6 @@ header .links {
     left: 60%;
     z-index: 1;
 }
-
 .item6 .bg {
     position: absolute;
     top: 50%;
@@ -443,9 +365,6 @@ header .links {
     background: url("http://ovn188pj2.bkt.gdipper.com/pic_map_20180402.png") no-repeat;
     background-size: cover;
 }
-
-/* footer */
-
 footer {
     height: 30px;
     line-height: 30px;
@@ -457,8 +376,6 @@ footer {
     font-size: 9px;
     padding-right: 30px;
 }
-
-/* contact.html */
 .content_text{
     font-size: 16px;
     color: #d4d4d4;
@@ -501,7 +418,7 @@ footer {
     width: 100%;
     font-size: 12px;
     margin: 20px 0;
-    line-height: 25px; 
+    line-height: 25px;
 }
 .content_text .content .mail a{
     color: #1868d4;
@@ -543,10 +460,10 @@ footer {
     margin-bottom: 20px;
 }
 .content_text .card p{
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
 }
 .content_text .card .text{
-    line-height: 25px; 
+    line-height: 25px;
 }
 .content_text .card .subtitle{
     font-size: 22px;
@@ -555,31 +472,25 @@ footer {
 .content_text .swiper-slide{
     padding: 0;
 }
-/* swiper */
-
 .swiper-button-next {
     opacity: 0.2;
     right: -85px;
     background-image: url("../imgs/next.png");
     transform: scaleY(0.7);
 }
-
 .swiper-slide{
     box-sizing: border-box;
     padding: 0 15px;
 }
-
 .swiper-button-next:hover{
     opacity: 1;
 }
-
 .swiper-button-prev {
     opacity: 0.2;
     left: -85px;
     background-image: url("../imgs/pre.png");
     transform: scaleY(0.7);
 }
-
 .swiper-button-prev:hover {
     opacity: 1;
 }

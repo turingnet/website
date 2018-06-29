@@ -1,5 +1,3 @@
-/* 全局变量 */
-/* large screen */
 :root{
     --large-screen-width: 70%;
     --large-screen-margin-left: 15%;
@@ -13,9 +11,6 @@ body .large{
 body .small{
     display: none;
 }
-
-/* 头部样式 */
-
 header {
     position: fixed;
     top: 0;
@@ -28,44 +23,34 @@ header {
     transition: all 0.3s;
     z-index: 1000;
 }
-
 .header_down {
     height: 75px;
     padding: 0 40px;
     background: rgba(0, 0, 0, 0.5);
 }
-
 .icon {
     height: 50px;
     margin-top: 25px;
 }
-
 header .links {
     float: right;
     color: #fff;
     line-height: 75px;
     font-size: 16px;
 }
-
 .link_item_active {
     color: #FFFFFF !important;
 }
-
 .link_item:hover {
     color: blue;
 }
-
 .link_item:not(:first-child) {
     margin-left: 40px;
 }
-
-/* 内容 */
-
 .block {
     position: relative;
     width: 100%;
 }
-
 .block .center {
     position: absolute;
     top: 0;
@@ -74,16 +59,11 @@ header .links {
     right: 0;
     margin: auto;
 }
-
-/* 第一块 */
-
 .item1 {
     height: 700px;
-/*     background: url("http://ovn188pj2.bkt.gdipper.com/bg1_20180402.png") no-repeat; */
     background: url("../imgs/bg1_20180402.png") no-repeat;
     background-size: cover;
 }
-
 .item1 .content {
     width: 920px;
     height: 70px;
@@ -91,7 +71,6 @@ header .links {
     font-size: 56px;
     text-align: center;
 }
-
 .item1 .button {
     position: relative;
     top: 40px;
@@ -102,19 +81,14 @@ header .links {
     border-radius: 3px;
     transition: all 0.8s;
 }
-
 .button_hover {
     background: #FCAB28;
     border: 1px rgba(0, 0, 0, 0) solid!important;
 }
-
-/* 第二块 */
-
 .item2 {
     background: url("http://ovn188pj2.bkt.gdipper.com/bg2_20180402.png") no-repeat;
     background-size: cover;
 }
-
 .item2 .content {
     width: var(--large-screen-width);
     margin-left: var(--large-screen-margin-left);
@@ -122,36 +96,28 @@ header .links {
     font-size: 40px;
     padding: var(--large-screen-padding-top-bottom) 0;
 }
-
 .item2 .title {
     margin-top: 40px 0;
     font-weight: 100;
 }
-
 .item2 .dec {
     background: rgba(0, 213, 255, 0.1);
     border-radius: 5px;
     margin: 40px 0;
     padding: 30px 40px;
 }
-
 .item2 .subtitle {
     font-size: 22px;
     color: #FCAB28;
 }
-
 .item2 .text {
     font-size: 18px;
     font-weight: 400;
     margin: 10px 0 5px 0;
 }
-
-/* 第三块 */
-
 .item3 {
     background-color: #1c1c1c;
 }
-
 .item3 .content {
     width: var(--large-screen-width);
     margin-left: var(--large-screen-margin-left);
@@ -159,19 +125,16 @@ header .links {
     font-size: 20px;
     padding: var(--large-screen-padding-top-bottom) 0;
 }
-
 .item3 .title {
     font-weight: 100;
     font-size: 40px;
     margin-bottom: 65px;
 }
-
 .item3 .subtitle {
     font-weight: 300;
     font-size: 30px;
     color: #FCAB28;
 }
-
 .item3 .text {
     font-size: 16px;
     line-height: 24px;
@@ -179,19 +142,14 @@ header .links {
     margin: 20px 0;
     opacity: 0.5;
 }
-
 @media only screen and (max-device-width: 768px){
     .item3 .text {
         font-size: 14px;
     }
 }
-
-/* 第四块 */
-
 .item4 {
     background-color: #141514;
 }
-
 .item4 .content {
     width: var(--large-screen-width);
     margin-left: var(--large-screen-margin-left);
@@ -199,13 +157,11 @@ header .links {
     font-size: 20px;
     padding: var(--large-screen-padding-top-bottom) 0
 }
-
 .item4 .title {
     font-weight: 100;
     font-size: 40px;
     margin-bottom: 65px;
 }
-
 .item4 .subtitle {
     font-weight: 200;
     font-size: 22px;
@@ -213,13 +169,11 @@ header .links {
     color: #FFFFFF;
     opacity: 0.6;
 }
-
 @media only screen and (max-device-width: 768px){
     .item4 .subtitle {
         font-size: 14px;
     }
 }
-
 .item4 .img_container {
     position: relative;
     margin: 60px 0;
@@ -227,7 +181,6 @@ header .links {
     width: 100%;
     text-align: center;
 }
-
 .item4 .img_container img {
     position: absolute;
     top: 0;
@@ -238,16 +191,12 @@ header .links {
     max-height: 100%;
     max-width: 100%;
 }
-
-/* large screen */
 .item4 .contain {
     border-top: #2b2c2b 1px solid;
     display: flex;
     padding-top: 80px;
     padding-bottom: 50px;
 }
-
-
 .item4 .contain .item {
     flex: 1;
     display: flex;
@@ -255,21 +204,17 @@ header .links {
     text-align: center;
     align-items: center;
 }
-
 .item4 .contain .item:not(:last-child){
     margin-right: 20px;
 }
-
 .item4 .contain .item img {
     height: 55px;
 }
-
 .item4 .contain .item .mini_title {
     font-size: 28px;
     font-weight: 200;
     margin: 25px 0 20px 0;
 }
-
 .item4 .contain .item .line {
     width: 60px;
     height: 4px;
@@ -277,20 +222,17 @@ header .links {
     border-radius: 3px;
     margin-bottom: 30px;
 }
-
 .item4 .contain .item .dec {
     opacity: 0.5;
     color: #FFFFFF;
     line-height: 24px;
 }
-
 .item5 {
     background: url("http://ovn188pj2.bkt.gdipper.com/bg3.jpg") no-repeat;
     background-size: cover;
     user-select: none;
     padding-bottom: 120px;
 }
-
 .item5 .content {
     width: var(--large-screen-width);
     margin-left: var(--large-screen-margin-left);
@@ -298,13 +240,11 @@ header .links {
     font-size: 20px;
     padding: var(--large-screen-padding-top-bottom) 0 0 0;
 }
-
 .item5 .title {
     font-weight: 100;
     font-size: 40px;
     margin-bottom: 65px;
 }
-
 .item5 .title2 {
     margin-top: 80px;
     border-top: #2b2c2b 1px solid;
@@ -312,12 +252,10 @@ header .links {
     font-size: 40px;
     padding: 65px 0;
 }
-
 .item5 .swiper_cards {
     width: 100%;
     display: flex;
 }
-
 .item5 .card {
     flex: 1;
     position: relative;
@@ -325,25 +263,19 @@ header .links {
     padding-bottom: 10px;
     min-height: 158px;
 }
-
 .item5 .radius{
     overflow: hidden;
     border-radius: 4px;
 }
-
 .item5 .advisors {
     padding-top: 10px;
 }
-
-/* large screen */
 .item5 .card:not(:last-child) {
     margin-right: 20px;
 }
-
 .item5 .card .avator {
     width: 100%;
 }
-
 .item5 .card .name {
     font-family: "HelveticaNeue-Bold";
     font-weight: 600;
@@ -354,7 +286,6 @@ header .links {
     margin-left: 10%;
     margin-top: 24px;
 }
-
 .item5 .card .job {
     font-size: 15px;
     color: #36ffff;
@@ -362,7 +293,6 @@ header .links {
     margin-left: 10%;
     margin-bottom: 10px;
 }
-
 .item5 .card .dec {
     font-size: 12px;
     color: #8a8a8a;
@@ -372,26 +302,20 @@ header .links {
     margin-bottom: 10px;
     margin-top: 24px;
 }
-
-/* 第六块 */
-
 .item6 {
     height: 640px;
     background-color: #141514;
 }
-
 .item6 .content {
     height: 640px;
     width: var(--large-screen-width);
 }
-
 .item6 .title {
     font-weight: 200;
     font-size: 40px;
     margin: 65px 0;
     color: #fff;
 }
-
 .item6 .subtitle {
     position: absolute;
     top: 320px;
@@ -401,11 +325,9 @@ header .links {
     font-size: 20px;
     color: #FCAB28;
 }
-
 .item6 .subtitle a {
     color: #FCAB28;
 }
-
 .item6 .icon{
     position: absolute;
     width: 42px;
@@ -414,7 +336,6 @@ header .links {
     right: 427px;
     z-index: 1;
 }
-
 .item6 .bg {
     position: absolute;
     top: 0;
@@ -424,9 +345,6 @@ header .links {
     background: url("http://ovn188pj2.bkt.gdipper.com/pic_map_20180402.png") no-repeat;
     background-size: cover;
 }
-
-/* footer */
-
 footer {
     height: 60px;
     line-height: 60px;
@@ -438,8 +356,6 @@ footer {
     font-size: 14px;
     padding-right: 200px;
 }
-
-/* contact.html */
 .content_text{
     font-size: 16px;
     color: #d4d4d4;
@@ -483,7 +399,7 @@ footer {
 }
 .content_text .content .text{
     margin: 20px 0;
-    line-height: 25px; 
+    line-height: 25px;
 }
 .content_text .content .mail a{
     color: #1868d4;
@@ -528,10 +444,10 @@ footer {
     margin-bottom: 30px;
 }
 .content_text .card p{
-    margin-bottom: 30px; 
+    margin-bottom: 30px;
 }
 .content_text .card .text{
-    line-height: 25px; 
+    line-height: 25px;
 }
 .content_text .card .subtitle{
     font-size: 22px;
@@ -540,31 +456,25 @@ footer {
 .content_text .swiper-slide{
     padding: 0;
 }
-/* swiper */
-
 .swiper-button-next {
     opacity: 0.2;
     right: -85px;
     background-image: url("../imgs/next.png");
     transform: scaleY(0.7);
 }
-
 .swiper-slide{
     box-sizing: border-box;
     padding: 0 15px;
 }
-
 .swiper-button-next:hover{
     opacity: 1;
 }
-
 .swiper-button-prev {
     opacity: 0.2;
     left: -85px;
     background-image: url("../imgs/pre.png");
     transform: scaleY(0.7);
 }
-
 .swiper-button-prev:hover {
     opacity: 1;
 }
