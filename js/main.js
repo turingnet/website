@@ -153,7 +153,7 @@ $(function () {
     }
 
     var swiper1 = new Swiper('.swiper-container-t', {
-        slidesPerView: 3,
+        slidesPerView: 4,
         spaceBetween: 30,
         slidesPerGroup: 1,
         loop: false,
@@ -165,7 +165,7 @@ $(function () {
     });
 
     var swiper2 = new Swiper('.swiper-container-b', {
-        slidesPerView: 3,
+        slidesPerView: 4,
         spaceBetween: 30,
         slidesPerGroup: 1,
         loop: false,
